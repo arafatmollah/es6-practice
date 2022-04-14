@@ -17,3 +17,32 @@ const address = {
 const fulltemplate = `Hello from arafat. It is the main thing's that arafat can do
 ${nature}. Agin said that ${arafat}. Okay I Think I finished no :${address.name}, ${address.expected}`;
 console.log(fulltemplate);
+
+
+//
+const divisible = (num) => num / 5;
+const result = divisible(10);
+console.log(result);
+//
+const two = (num1, num2) => {
+    const first = num1 + 2;
+    const sec = num2 + 2;
+    const r1 = (first + sec) * 2;
+    return r1;
+}
+const final = two(5, 10);
+console.log(final)
+
+//
+const third = (num1, num2, num3) => num1 * num2 * num3;
+const r2 = third(2, 4, 6);
+console.log(r2);
+
+//map parctice
+const arr1 = [23, 45, 56, 20];
+const newArr = arr1.map(array => array * 2);
+console.log(newArr);
+
+const practicearray = [5, 10, 15, 20];
+const newPracticeArray = practicearray.map(array => array * 5);
+console.log(newPracticeArray);
