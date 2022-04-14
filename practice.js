@@ -46,3 +46,30 @@ console.log(newArr);
 const practicearray = [5, 10, 15, 20];
 const newPracticeArray = practicearray.map(array => array * 5);
 console.log(newPracticeArray);
+
+//filter
+const filterArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30];
+const newArray = filterArray.filter(array => array % 2 == 0);
+console.log(newArray);
+
+//find
+const findArray = [{
+    name: 'Daraz',
+    product: 'galaxy',
+    price: 5000,
+    des:'phone'
+},
+{
+    name: 'Daraz',
+    product: 'galaxy',
+    price: 5000,
+    des:'phone'
+},
+{ name: 'monarch-mart', product: 'i-phone', price: 4500, des: 'phone' },
+{ name: 'monarch-mart', product: 'i-phone', price: 5000, des: 'phone' },
+    { name: 'monarch-mart', product: 'i-phone', price: 3500, des: 'phone' },
+    { name: 'monarch-mart', product: 'i-phone', price: 500, des: 'phone' },
+    {name:'monarch-mart',product:'i-phone',price:5000,des:'phone'}
+]
+const newfindarray = findArray.find(array => array.price === 5000);
+console.log(newfindarray);
