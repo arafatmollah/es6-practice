@@ -73,3 +73,42 @@ const findArray = [{
 ]
 const newfindarray = findArray.find(array => array.price === 5000);
 console.log(newfindarray);
+
+//destrure
+const favourite = {
+    name: 'leo-messi',
+    sports: 'football',
+    age: 34,
+    foot: 'left-foot',
+    nickname : 'goat'
+}
+const { name, sports, age, foot, nickname } = favourite;
+console.log(name, sports, age);
+
+//destructure array'
+let on1, two1, three1 ;
+[ on1, two1, three1 ] = ['arafat', 30, 'favourite', 90];
+
+console.log(three1);
+const [n1, n2, three] = ['english', 'bangla', 'physics'];
+console.log(three);
+
+//
+const threeparam = (num1, num2, num3 = 7) => num1 + num2 + num3;
+const r3 = threeparam(3, 4);
+console.log(r3);
+
+//nested obj
+const newobj = {
+    name: 'javascript',
+    year: 1993,
+    use: 'master of all',
+    main:'web-development',
+    more: {
+        name1: 'c#',
+        year: 1970,
+        ude: 'game development',
+        main1: 'architecture'
+    } 
+}
+console.log(newobj?.more?.ude);
